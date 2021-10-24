@@ -75,8 +75,148 @@ body {
   font-size: 8px;
   line-height: 9px;
   color: #000000;
-
   display: block;
   padding: 5px;
   border-radius: 50%;
+}
+.slide {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+.slide-text-light {
+  background-color: grey;
+  color: #fff;
+}
+.slide-summer {
+  background-image: url("https://s3-alpha-sig.figma.com/img/0f84/7afa/97c3cda271394acdc1af834bb6480140?Expires=1635724800&Signature=Pqfnt2WXWz27R0~mz2noE18TpZowBGMfJpC6tJWjugMkZyAM8FHwD0k27bRABkYbfVPGhX9Sv8d2AM4pmKS26EycVUomKgI9ZuMbBY-G~T7PDffXCJWMnOTLX52sBHITMTyjfXVKAI~tdtR~V8k0EyNf-PvyjMqR3y27IySwGmQW3iRbPz8GKMGJdcVm8kJUSfmk3EZu8AgCRVGrOAaKWGv57zj8tCPVsIAU-DivYrD4h~WnPisw~wX-MaUGy-rqU6UASe2LLIgGouuPtS~A~g-jzvL4OY7y6cBsa1Dw-7ICacaxJvSQVyG4trYFnZM47tgqR7oDl~sU20AbYA1amQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.43) 40.45%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(.png);
+}
+.slide-content {
+  position: relative;
+  max-width: 400px;
+}
+.slide-title {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 51px;
+}
+.slide-text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 30px;
+}
+.button-primary {
+  background: #f47322;
+  color: #fff;
+}
+.button-default {
+  background: #fff;
+  color: #5f5f61;
+}
+.button {
+  border-radius: 25px;
+  padding: 11px 50px;
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+}
+.promo {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 32px;
+  width: 570px;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-text-light {
+  color: #fff;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card-header {
+  position: relative;
+}
+.card-footer {
+  position: relative;
+}
+.card-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  margin-top: 4px;
+  margin-bottom: 21px;
+}
+.card-description {
+  max-width: 170px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+}
+.card-price {
+  display: block;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 23px;
+  margin-bottom: 8px;
+}
+.card-delivery {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 25px;
+}
+.sweet-basket {
+  background: url("https://s3-alpha-sig.figma.com/img/1f0e/5868/c9837ceb2b0cdf34561514381ccd94b2?Expires=1635724800&Signature=RmtyhctRi8djGxo7WPs7-9AVFM7EbOJ7vnEYSqpRT3m-~1xW5RZxST8BxyjRp8fX7UQ-WDvlvZXHgK300Di~hqeTdRWYicRpKd-1nDZSfkXIXdSGOeH9fL1KRc2jImsiY9B91OtKYVPSx2txxpXMDuH6oG-uD6EkserMZ9bzsUuz4Towib61NaLcdhNvgpIHQL98YbdtL953NZYqUmAJZJ9vIYE7cZPkolB3gaAi9AmSLyjgb812YU-cXTb4Azr-Mx21ZqCNyL-LUk9NIvjuaOosfyf6dpXUt27oLRQ1ikSoJJE9jF5rWg8kKqdIj3H1V4JnSNi7axbDGQPUk11FdA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA")
+    no-repeat center / cover;
+}
+.minimum-effort {
+  background: url("https://s3-alpha-sig.figma.com/img/52f9/b735/ea96264906457122f2c499789ef9dbde?Expires=1635724800&Signature=LEh9Yqop0sfVe8kBp3~iooAcRI17~yyHLEVwZMi4zWgKbE7NMFG7wua7JhdwQh3DNmdSL29ktMr6Ndy04KYKl9C4WoJmgfPRnrQ1fMUNM~CXfaIVMm63o1YFNBcPdVAgtF0-~ZwdbTtAw6iGt3aGhgjnmbNA4TKvdzHMdRalomPVseqv6YvexKkLBMmpcrOQeFL1OinNtuMTMRZSHqV4jUO0TzMYkHdqYm8pjfBgVD7JfljYEQos9xrmPU9rAV1IJxYLSvo71ce~oKUaltDd72Qtqp9yCY99EoDyMCh8FQCK7Rh46Nlbg-0vh5aJ4O-ClQGDDYLaAlcOgXwiVpiuXA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA")
+    no-repeat center / cover;
 }
